@@ -1,0 +1,87 @@
+@media(max-width:760px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        
+    }
+
+    #box {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./imagem/fundo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+#box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    line-height: 2rem;
+    padding: 0.7%;
+    border-radius: 30px;
+    background-color: rgb(194, 215, 243);
+    opacity: 0.48;
+
+
+}
+
+#titulo {
+    font-size: 45px;
+    font-family: 'Aclonica', sans-serif;
+    margin-bottom: 0.5%;
+}
+
+#subtitulo {
+    font-family: 'Antic', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0.5%;
+}
+
+#texto {
+    font-family: 'Antic', sans-serif;
+    font-size:1.3rem; 
+    margin: 0.5%;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+#legenda {
+    margin:0.5%;
+    font-size: 2rem;
+    font-family: 'Aclonica', sans-serif;
+}
+
+
+#data {
+    margin: 1%;
+}
+
+#botao {
+    margin-top: 1%;
+    font-family: 'Antic', sans-serif;
+    font-size: 2rem;
+    border: 1.7px solid black;
+    border-radius: 15px;
+}

@@ -3,6 +3,8 @@ let botao = document.getElementById('botao');
 
 let corpo = document.body;
 
+const video = document.getElementById('iframe');
+
 
 botao.addEventListener('click',()=>{
     let url = `https://api.nasa.gov/planetary/apod?api_key=akNSApe5z5RNVz55fbkAyeTb5OgRw2Q7vx8kcgfm&date=${data.value}`
@@ -18,14 +20,14 @@ botao.addEventListener('click',()=>{
 
         let imagem = conversao.url;
         
+
         if(conversao.media_type === 'image'){
-            corpo.style.backgroundImage = `url(${imagem})`
-        }else {
-            const video = document.createElement('iframe');
-            video.classList.add('video');
-            video.allowFullscreen = true;
+            video.style.display = 'none';
+            corpo.style.backgroundImage = `url(${imagem})`;
+        }else{
+            
             video.src = conversao.url;
-            corpo.appendChild(video);
+            video.style.display = 'block';
             
         }
 

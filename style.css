@@ -50,17 +50,19 @@ body {
     font-size: 45px;
     font-family: 'Aclonica', sans-serif;
     margin-bottom: 0.5%;
+    margin-top: 0;
 }
 
 #subtitulo {
     font-family: 'Antic', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5em;
     margin-bottom: 0.5%;
+    margin-top: 0;
 }
 
 #texto {
     font-family: 'Antic', sans-serif;
-    font-size:1.3rem; 
+    font-size:1.2em; 
     margin: 0.5%;
     margin-left: auto;
     margin-right: 0;
@@ -68,8 +70,9 @@ body {
 
 
 #legenda {
-    margin:0.5%;
-    font-size: 2rem;
+    margin-top:0.3%;
+    margin-bottom: 0.3%;
+    font-size: 1.7em;
     font-family: 'Aclonica', sans-serif;
 }
 
@@ -81,7 +84,25 @@ body {
 #botao {
     margin-top: 1%;
     font-family: 'Antic', sans-serif;
-    font-size: 2rem;
+    font-size: 1.6em;
     border: 1.7px solid black;
     border-radius: 15px;
+}
+
+#botao:hover{    
+    border: 2.3px solid cyan;
+    background-color: white;
+}
+
+#botao:active{
+    background-color: black;
+    color: white;
+}
+
+.none {
+    display: none;
+}
+
+#iframe {
+    display: none;
 }

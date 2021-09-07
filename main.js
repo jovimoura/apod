@@ -7,12 +7,6 @@ let container = document.getElementById('container');
 
 const video = document.createElement('iframe');
 
-//const video = document.getElementById('iframe');
-
-//const caixaVideo = document.getElementById('box-video');
-//caixaVideo.classList.add('none');
-
-
 botao.addEventListener('click',()=>{
     let url = `https://api.nasa.gov/planetary/apod?api_key=akNSApe5z5RNVz55fbkAyeTb5OgRw2Q7vx8kcgfm&date=${data.value}`
 
@@ -28,7 +22,7 @@ botao.addEventListener('click',()=>{
         
 
         if(conversao.media_type === 'image'){
-            //caixaVideo.classList.add('none')
+            
             video.style.display = 'none';
             corpo.style.backgroundImage = `url(${imagem})`;
         }else{
@@ -37,11 +31,18 @@ botao.addEventListener('click',()=>{
             caixaVideo.setAttribute('id','box-video');
             container.append(caixaVideo);
 
+            const texto = document.createElement('h3');
+            texto.setAttribute('id','titulo');
+            texto.textContent = 'Vídeo';
+            caixaVideo.append(texto);
+
             caixaVideo.append(video);
             video.setAttribute('id','iframe');
 
+            caixaVideo.style.display = 'flex';
+            caixaVideo.style.flexDirection = 'column'
+            caixaVideo.style.textAlign = 'center'
 
-            
             video.src = conversao.url;
             video.style.display = 'block';
             

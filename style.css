@@ -1,17 +1,12 @@
-@media(max-width:760px){
-    body{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
 
-        
-    }
 
-    #box {
-        display: flex;
-        flex-direction: column;
-    }
-
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
 }
 
 
@@ -24,6 +19,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
 
 }
 
@@ -47,32 +43,32 @@ body {
 }
 
 #titulo {
-    font-size: 45px;
+    font-size: 2.7rem;
     font-family: 'Aclonica', sans-serif;
     margin-bottom: 0.5%;
-    margin-top: 0;
+    
 }
 
 #subtitulo {
     font-family: 'Antic', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.8rem;
     margin-bottom: 0.5%;
-    margin-top: 0;
+    
 }
 
 #texto {
     font-family: 'Antic', sans-serif;
-    font-size:1.2em; 
+    font-size:1.2rem; 
     margin: 0.5%;
     margin-left: auto;
-    margin-right: 0;
+    
 }
 
 
 #legenda {
     margin-top:0.3%;
     margin-bottom: 0.3%;
-    font-size: 1.7em;
+    font-size: 170%;
     font-family: 'Aclonica', sans-serif;
 }
 
@@ -84,13 +80,13 @@ body {
 #botao {
     margin-top: 1%;
     font-family: 'Antic', sans-serif;
-    font-size: 1.6em;
-    border: 1.7px solid black;
+    font-size: 1.6rem;
+    border: 2.3px solid black;
     border-radius: 15px;
 }
 
 #botao:hover{    
-    border: 2.3px solid cyan;
+    border-color: cyan;
     background-color: white;
 }
 
@@ -104,5 +100,94 @@ body {
 }
 
 #iframe {
-    display: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+
+}
+
+#box-video{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 50%;
+    border: 1px black solid;
+    padding: 0.7%;
+    border-radius: 30px;
+    background-color: rgb(194, 215, 243);
+    opacity: 0.48;
+
+
+}
+
+
+@media(max-width:760px){
+    body{
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        
+        
+    }
+
+    #container {
+        flex-direction: column;
+        height: 80%;
+        width: 95%;
+
+    }
+
+    #box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 100%;
+        padding:2px;
+        font-size: 1rem;
+
+    }
+
+    #titulo {
+        
+        font-size: 2em;
+        text-align: center;
+
+    }
+
+    #subtitulo {
+        
+        font-size: 1.4em;
+    }
+
+    #texto {
+        
+        font-size: 1em;
+    }
+
+    #legenda {
+        font-size: 2em;
+        
+    }
+
+
+    #botao {
+        font-size: 1.4em;
+        
+    }
+
+    #box-video {
+        height: 100%;
+        width: 100%;
+        margin-top: 3%;
+    }
+    
+    #iframe{
+        height: 100%;
+        width: 100%;
+    }
+
+
 }
